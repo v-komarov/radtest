@@ -1,0 +1,12 @@
+[Unit]
+Description=IPTV Radius test service
+After=freeradiusdb.service
+Requires=freeradius.service
+
+[Service]
+[Service]
+ExecStart=/usr/bin/docker start radtest
+
+
+[Install]
+WantedBy=multi-user.target
