@@ -1,6 +1,6 @@
 [Unit]
 Description=IPTV Radius test service
-After=freeradiusdb.service
+After=freeradius.service
 Requires=freeradius.service
 
 [Service]

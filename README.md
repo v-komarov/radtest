@@ -18,6 +18,10 @@ gunicorn -b 0.0.0.0:8080 -w 10 --pythonpath src radtest:app
 
 ```
 curl -X GET http://127.0.0.1:8080/90E6BA8B16C5/239.1.21.3
-Error
+True
+
+
+curl -X GET http://127.0.0.1:8080/90E6BA8B16C5/226.110.10.128
+False
 
 ```
