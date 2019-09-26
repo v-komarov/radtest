@@ -22,7 +22,10 @@ def check_radius(mac,address,server,secret):
     attrs = { 'Framed-IP-Address':binascii.unhexlify(address) }
 
     try:
-        return r.authenticate(mac,mac, attributes=attrs)
+        if r.authenticate(mac,mac, attributes=attrs):
+            return 'True'
+        else:
+            return 'False'
     except:
         return 'Error'
 
