@@ -17,4 +17,6 @@ COPY ./src/conf.py /
 COPY ./src/radtest.py /
 
 
-CMD ["gunicorn","-b 0.0.0.0:8080","-w 10","--chdir /","radtest:app"]
+
+
+CMD ["gunicorn","-b 0.0.0.0:8080","-w 10","radtest:app"]
